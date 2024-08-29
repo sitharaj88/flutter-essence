@@ -8,7 +8,7 @@ FlutterEssence is a comprehensive collection of Flutter code snippets designed t
 
 ## Features
 
-- **200+ Code Snippets**: Covering a wide range of Flutter components, from basic widgets to complex layouts and animations.
+- **69+ Code Snippets**: Covering a wide range of Flutter components, from basic widgets to complex layouts and animations.
 - **Custom Widgets**: Easily integrate reusable custom components into your Flutter projects.
 - **Form Handling**: Simplified form creation with validation, input fields, and more.
 - **Navigation**: Efficiently manage app navigation with ready-to-use navigation snippets.
