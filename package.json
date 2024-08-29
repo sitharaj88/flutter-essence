@@ -1,0 +1,42 @@
+{
+  "name": "flutteressence",
+  "displayName": "FlutterEssence",
+  "description": "FlutterEssence is a comprehensive collection of Flutter code snippets designed to enhance productivity and simplify the development process.",
+  "version": "0.0.1",
+  "publisher": "sitharaj88",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "logo/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sitharaj88/flutter-essence.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sitharaj88/flutter-essence/issues"
+  },
+  "homepage": "https://github.com/sitharaj88/flutter-essence#readme",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "author": {
+    "name": "Sitharaj Seenivasan",
+    "url": "https://www.linkedin.com/in/sitharaj88"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "flutter",
+    "dart",
+    "snippets",
+    "flutter snippets",
+    "vscode"
+  ]
+}

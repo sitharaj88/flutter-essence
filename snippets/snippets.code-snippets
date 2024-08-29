@@ -1,0 +1,1317 @@
+{
+  "FlutterEssence Container": {
+    "prefix": "feContainer",
+    "body": [
+      "Container(",
+      "  width: ${1:::100.0},",
+      "  height: ${2:::100.0},",
+      "  decoration: BoxDecoration(",
+      "    color: Colors.${3:::blue},",
+      "    borderRadius: BorderRadius.circular(${4:::8.0}),",
+      "  ),",
+      "  child: ${5:::Center(",
+      "    child: Text('${6:Text}', style: TextStyle(color: Colors.${7:::white})),",
+      "  )}",
+      ")"
+    ],
+    "description": "Create a Flutter Container with basic styling."
+  },
+  "FlutterEssence Text": {
+    "prefix": "feText",
+    "body": [
+      "Text(",
+      "  '${1:::Hello World}',",
+      "  style: TextStyle(",
+      "    fontSize: ${2:::16.0},",
+      "    color: Colors.${3:::black},",
+      "    fontWeight: FontWeight.${4:::normal},",
+      "  ),",
+      ")"
+    ],
+    "description": "Create a basic Flutter Text widget."
+  },
+  "FlutterEssence Icon": {
+    "prefix": "feIcon",
+    "body": [
+      "Icon(",
+      "  Icons.${1:::home},",
+      "  size: ${2:::24.0},",
+      "  color: Colors.${3:::black},",
+      ")"
+    ],
+    "description": "Create a basic Flutter Icon widget."
+  },
+  "FlutterEssence Image": {
+    "prefix": "feImage",
+    "body": [
+      "Image.asset(",
+      "  '${1:::assets/images/image.png}',",
+      "  width: ${2:::100.0},",
+      "  height: ${3:::100.0},",
+      "  fit: BoxFit.${4:::cover},",
+      ")"
+    ],
+    "description": "Create an Image widget using a local asset."
+  },
+  "FlutterEssence Scaffold": {
+    "prefix": "feScaffold",
+    "body": [
+      "Scaffold(",
+      "  appBar: AppBar(",
+      "    title: Text('${1:::Title}'),",
+      "  ),",
+      "  body: ${2:::Center(",
+      "    child: Text('${3:Hello World}'),",
+      "  )},",
+      "  floatingActionButton: FloatingActionButton(",
+      "    onPressed: () {",
+      "      ${4:::// Handle the press here}",
+      "    },",
+      "    child: Icon(Icons.${5:::add}),",
+      "  ),",
+      ")"
+    ],
+    "description": "Create a basic Scaffold with AppBar, body, and FloatingActionButton."
+  },
+  "FlutterEssence AppBar": {
+    "prefix": "feAppBar",
+    "body": [
+      "AppBar(",
+      "  title: Text('${1:::Title}'),",
+      "  backgroundColor: Colors.${2:::blue},",
+      "  actions: [",
+      "    IconButton(",
+      "      icon: Icon(Icons.${3:::search}),",
+      "      onPressed: () {",
+      "        ${4:::// Handle search press}",
+      "      },",
+      "    ),",
+      "  ],",
+      ")"
+    ],
+    "description": "Create an AppBar with a title and action buttons."
+  },
+  "FlutterEssence Drawer": {
+    "prefix": "feDrawer",
+    "body": [
+      "Drawer(",
+      "  child: ListView(",
+      "    padding: EdgeInsets.zero,",
+      "    children: <Widget>[",
+      "      DrawerHeader(",
+      "        decoration: BoxDecoration(",
+      "          color: Colors.${1:::blue},",
+      "        ),",
+      "        child: Text(",
+      "          '${2:::Header}',",
+      "          style: TextStyle(",
+      "            color: Colors.${3:::white},",
+      "            fontSize: ${4:::24},",
+      "          ),",
+      "        ),",
+      "      ),",
+      "      ListTile(",
+      "        leading: Icon(Icons.${5:::home}),",
+      "        title: Text('${6:::Home}'),",
+      "        onTap: () {",
+      "          ${7:::// Handle the tap}",
+      "        },",
+      "      ),",
+      "      ListTile(",
+      "        leading: Icon(Icons.${8:::settings}),",
+      "        title: Text('${9:::Settings}'),",
+      "        onTap: () {",
+      "          ${10:::// Handle the tap}",
+      "        },",
+      "      ),",
+      "    ],",
+      "  ),",
+      ")"
+    ],
+    "description": "Create a Drawer with a header and list items."
+  },
+  "FlutterEssence BottomNavigationBar": {
+    "prefix": "feBottomNavigationBar",
+    "body": [
+      "BottomNavigationBar(",
+      "  items: const <BottomNavigationBarItem>[",
+      "    BottomNavigationBarItem(",
+      "      icon: Icon(Icons.${1:::home}),",
+      "      label: '${2:::Home}',",
+      "    ),",
+      "    BottomNavigationBarItem(",
+      "      icon: Icon(Icons.${3:::business}),",
+      "      label: '${4:::Business}',",
+      "    ),",
+      "    BottomNavigationBarItem(",
+      "      icon: Icon(Icons.${5:::school}),",
+      "      label: '${6:::School}',",
+      "    ),",
+      "  ],",
+      "  currentIndex: ${7:::0},",
+      "  selectedItemColor: Colors.${8:::blue},",
+      "  onTap: (index) {",
+      "    ${9:::// Handle the tap}",
+      "  },",
+      ")"
+    ],
+    "description": "Create a BottomNavigationBar with multiple items."
+  },
+  "FlutterEssence FloatingActionButton": {
+    "prefix": "feFloatingActionButton",
+    "body": [
+      "FloatingActionButton(",
+      "  onPressed: () {",
+      "    ${1:::// Handle the press here}",
+      "  },",
+      "  child: Icon(Icons.${2:::add}),",
+      "  backgroundColor: Colors.${3:::blue},",
+      ")"
+    ],
+    "description": "Create a FloatingActionButton."
+  },
+  "FlutterEssence Card": {
+    "prefix": "feCard",
+    "body": [
+      "Card(",
+      "  shape: RoundedRectangleBorder(",
+      "    borderRadius: BorderRadius.circular(${1:::8.0}),",
+      "  ),",
+      "  elevation: ${2:::4},",
+      "  child: Padding(",
+      "    padding: const EdgeInsets.all(${3:::16.0}),",
+      "    child: Column(",
+      "      children: <Widget>[",
+      "        Text('${4:::Title}'),",
+      "        SizedBox(height: ${5:::10.0}),",
+      "        Text('${6:::Subtitle}'),",
+      "      ],",
+      "    ),",
+      "  ),",
+      ")"
+    ],
+    "description": "Create a Card with basic content."
+  },
+  "FlutterEssence ListTile": {
+    "prefix": "feListTile",
+    "body": [
+      "ListTile(",
+      "  leading: Icon(Icons.${1:::account_circle}),",
+      "  title: Text('${2:::Title}'),",
+      "  subtitle: Text('${3:::Subtitle}'),",
+      "  trailing: Icon(Icons.${4:::arrow_forward}),",
+      "  onTap: () {",
+      "    ${5:::// Handle the tap}",
+      "  },",
+      ")"
+    ],
+    "description": "Create a ListTile with leading, title, subtitle, and trailing icons."
+  },
+  "FlutterEssence Stack": {
+    "prefix": "feStack",
+    "body": [
+      "Stack(",
+      "  children: <Widget>[",
+      "    ${1:::Container(",
+      "      width: ${2:100.0},",
+      "      height: ${3:::100.0},",
+      "      color: Colors.${4:::red},",
+      "    )},",
+      "    ${5:::Positioned(",
+      "      top: ${6:10.0},",
+      "      left: ${7:::10.0},",
+      "      child: Container(",
+      "        width: ${8:::50.0},",
+      "        height: ${9:::50.0},",
+      "        color: Colors.${10:::blue},",
+      "      ),",
+      "    )}",
+      "  ],",
+      ")"
+    ],
+    "description": "Create a Flutter Stack with positioned children."
+  },
+  "FlutterEssence Divider": {
+    "prefix": "feDivider",
+    "body": [
+      "Divider(",
+      "  color: Colors.${1:::grey},",
+      "  height: ${2:::1.0},",
+      "  thickness: ${3:::1.0},",
+      "  indent: ${4:::16.0},",
+      "  endIndent: ${5:::16.0},",
+      ")"
+    ],
+    "description": "Create a Divider with custom styling."
+  },
+  "FlutterEssence Placeholder": {
+    "prefix": "fePlaceholder",
+    "body": [
+      "Placeholder(",
+      "  color: Colors.${1:::grey},",
+      "  strokeWidth: ${2:::2.0},",
+      "  fallbackWidth: ${3:::100.0},",
+      "  fallbackHeight: ${4:::100.0},",
+      ")"
+    ],
+    "description": "Create a Placeholder widget."
+  },
+  "FlutterEssence Chip": {
+    "prefix": "feChip",
+    "body": [
+      "Chip(",
+      "  label: Text('${1:::Label}'),",
+      "  avatar: CircleAvatar(",
+      "    backgroundColor: Colors.${2:::blue},",
+      "    child: Text('${3:::AB}'),",
+      "  ),",
+      "  deleteIcon: Icon(Icons.${4:::cancel}),",
+      "  onDeleted: () {",
+      "    ${5:::// Handle delete}",
+      "  },",
+      "  backgroundColor: Colors.${6:::grey},",
+      ")"
+    ],
+    "description": "Create a Chip with an avatar and delete icon."
+  },
+  "FlutterEssence Tooltip": {
+    "prefix": "feTooltip",
+    "body": [
+      "Tooltip(",
+      "  message: '${1:::Tooltip message}',",
+      "  child: ${2:::Icon(Icons.${3:info})},",
+      ")"
+    ],
+    "description": "Create a Tooltip for a widget."
+  },
+  "FlutterEssence Banner": {
+    "prefix": "feBanner",
+    "body": [
+      "Banner(",
+      "  message: '${1:::Banner message}',",
+      "  location: BannerLocation.${2:::topStart},",
+      "  color: Colors.${3:::red},",
+      "  child: ${4:::Scaffold(",
+      "    appBar: AppBar(",
+      "      title: Text('${5:Title}'),",
+      "    ),",
+      "    body: Center(",
+      "      child: Text('${6:::Hello World}'),",
+      "    ),",
+      "  )}",
+      ")"
+    ],
+    "description": "Create a Banner with a message and location."
+  },
+  "FlutterEssence AlertDialog": {
+    "prefix": "feAlertDialog",
+    "body": [
+      "showDialog(",
+      "  context: context,",
+      "  builder: (BuildContext context) {",
+      "    return AlertDialog(",
+      "      title: Text('${1:::Alert}'),",
+      "      content: Text('${2:::This is an alert dialog}'),",
+      "      actions: <Widget>[",
+      "        TextButton(",
+      "          onPressed: () {",
+      "            Navigator.of(context).pop();",
+      "          },",
+      "          child: Text('${3:::OK}'),",
+      "        ),",
+      "      ],",
+      "    );",
+      "  },",
+      ");"
+    ],
+    "description": "Show an AlertDialog with a title, content, and actions."
+  },
+  "FlutterEssence SimpleDialog": {
+    "prefix": "feSimpleDialog",
+    "body": [
+      "showDialog(",
+      "  context: context,",
+      "  builder: (BuildContext context) {",
+      "    return SimpleDialog(",
+      "      title: Text('${1:::Select an option}'),",
+      "      children: <Widget>[",
+      "        SimpleDialogOption(",
+      "          onPressed: () {",
+      "            Navigator.pop(context, ${2:::Option 1});",
+      "          },",
+      "          child: Text('${3:::Option 1}'),",
+      "        ),",
+      "        SimpleDialogOption(",
+      "          onPressed: () {",
+      "            Navigator.pop(context, ${4:::Option 2});",
+      "          },",
+      "          child: Text('${5:::Option 2}'),",
+      "        ),",
+      "      ],",
+      "    );",
+      "  },",
+      ");"
+    ],
+    "description": "Show a SimpleDialog with multiple options."
+  },
+  "FlutterEssence ProgressBar": {
+    "prefix": "feProgressBar",
+    "body": [
+      "LinearProgressIndicator(",
+      "  value: ${1:::null},",
+      "  backgroundColor: Colors.${2:::grey},",
+      "  valueColor: AlwaysStoppedAnimation<Color>(Colors.${3:::blue}),",
+      ")"
+    ],
+    "description": "Create a LinearProgressBar with an indeterminate state."
+  },
+  "FlutterEssence CircularProgressIndicator": {
+    "prefix": "feCircularProgressIndicator",
+    "body": [
+      "CircularProgressIndicator(",
+      "  value: ${1:::null},",
+      "  backgroundColor: Colors.${2:::grey},",
+      "  valueColor: AlwaysStoppedAnimation<Color>(Colors.${3:::blue}),",
+      ")"
+    ],
+    "description": "Create a CircularProgressIndicator with an indeterminate state."
+  },
+  "FlutterEssence LinearProgressIndicator": {
+    "prefix": "feLinearProgressIndicator",
+    "body": [
+      "LinearProgressIndicator(",
+      "  value: ${1:::null},",
+      "  backgroundColor: Colors.${2:::grey},",
+      "  valueColor: AlwaysStoppedAnimation<Color>(Colors.${3:::blue}),",
+      ")"
+    ],
+    "description": "Create a LinearProgressIndicator with an indeterminate state."
+  },
+  "FlutterEssence Column": {
+    "prefix": "feColumn",
+    "body": [
+      "Column(",
+      "  mainAxisAlignment: MainAxisAlignment.${1:::start},",
+      "  crossAxisAlignment: CrossAxisAlignment.${2:::center},",
+      "  children: <Widget>[",
+      "    ${3:::Text('Item 1')},",
+      "    ${4:::Text('Item 2')},",
+      "    ${5:::Text('Item 3')}",
+      "  ],",
+      ")"
+    ],
+    "description": "Create a Flutter Column with children widgets."
+  },
+  "FlutterEssence Row": {
+    "prefix": "feRow",
+    "body": [
+      "Row(",
+      "  mainAxisAlignment: MainAxisAlignment.${1:::start},",
+      "  crossAxisAlignment: CrossAxisAlignment.${2:::center},",
+      "  children: <Widget>[",
+      "    ${3:::Text('Item 1')},",
+      "    ${4:::Text('Item 2')},",
+      "    ${5:::Text('Item 3')}",
+      "  ],",
+      ")"
+    ],
+    "description": "Create a Flutter Row with children widgets."
+  },
+  "FlutterEssence Expanded": {
+    "prefix": "feExpanded",
+    "body": [
+      "Expanded(",
+      "  flex: ${1:::1},",
+      "  child: ${2:::Container(",
+      "    color: Colors.${3:blue},",
+      "  )},",
+      ")"
+    ],
+    "description": "Use Expanded to take up available space within a Row or Column."
+  },
+  "FlutterEssence Padding": {
+    "prefix": "fePadding",
+    "body": [
+      "Padding(",
+      "  padding: EdgeInsets.all(${1:::16.0}),",
+      "  child: ${2:::Text('Padded Text')},",
+      ")"
+    ],
+    "description": "Wrap a widget with Padding."
+  },
+  "FlutterEssence Align": {
+    "prefix": "feAlign",
+    "body": [
+      "Align(",
+      "  alignment: Alignment.${1:::center},",
+      "  child: ${2:::Text('Aligned Text')},",
+      ")"
+    ],
+    "description": "Align a child widget within its parent."
+  },
+  "FlutterEssence Center": {
+    "prefix": "feCenter",
+    "body": ["Center(", "  child: ${1:::Text('Centered Text')},", ")"],
+    "description": "Center a widget within its parent."
+  },
+  "FlutterEssence SizedBox": {
+    "prefix": "feSizedBox",
+    "body": [
+      "SizedBox(",
+      "  width: ${1:::100.0},",
+      "  height: ${2:::100.0},",
+      "  child: ${3:::Container(",
+      "    color: Colors.${4:blue},",
+      "  )},",
+      ")"
+    ],
+    "description": "Create a SizedBox with fixed width and height."
+  },
+  "FlutterEssence Flex": {
+    "prefix": "feFlex",
+    "body": [
+      "Flex(",
+      "  direction: Axis.${1:::vertical},",
+      "  mainAxisAlignment: MainAxisAlignment.${2:::start},",
+      "  crossAxisAlignment: CrossAxisAlignment.${3:::center},",
+      "  children: <Widget>[",
+      "    ${4:::Text('Item 1')},",
+      "    ${5:::Text('Item 2')},",
+      "  ],",
+      ")"
+    ],
+    "description": "Create a Flex widget for flexible layouts."
+  },
+  "FlutterEssence GridView": {
+    "prefix": "feGridView",
+    "body": [
+      "GridView.builder(",
+      "  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(",
+      "    crossAxisCount: ${1:::2},",
+      "  ),",
+      "  itemBuilder: (context, index) {",
+      "    return ${2:::Card(",
+      "      child: Center(",
+      "        child: Text('${3:Item $index}'),",
+      "      ),",
+      "    )};",
+      "  },",
+      "  itemCount: ${4:::20},",
+      ")"
+    ],
+    "description": "Create a GridView with a fixed number of columns."
+  },
+  "FlutterEssence ListView": {
+    "prefix": "feListView",
+    "body": [
+      "ListView.builder(",
+      "  itemCount: ${1:::20},",
+      "  itemBuilder: (context, index) {",
+      "    return ListTile(",
+      "      title: Text('${2:::Item $index}'),",
+      "    );",
+      "  },",
+      ")"
+    ],
+    "description": "Create a ListView with dynamic content."
+  },
+  "FlutterEssence FractionallySizedBox": {
+    "prefix": "feFractionallySizedBox",
+    "body": [
+      "FractionallySizedBox(",
+      "  widthFactor: ${1:::0.5},",
+      "  heightFactor: ${2:::0.5},",
+      "  child: ${3:::Container(",
+      "    color: Colors.${4:blue},",
+      "  )},",
+      ")"
+    ],
+    "description": "Create a FractionallySizedBox to size a child widget as a fraction of its parent."
+  },
+  "FlutterEssence LimitedBox": {
+    "prefix": "feLimitedBox",
+    "body": [
+      "LimitedBox(",
+      "  maxHeight: ${1:::200.0},",
+      "  maxWidth: ${2:::200.0},",
+      "  child: ${3:::Container(",
+      "    color: Colors.${4:blue},",
+      "  )},",
+      ")"
+    ],
+    "description": "Create a LimitedBox to constrain the size of a child widget."
+  },
+  "FlutterEssence ConstrainedBox": {
+    "prefix": "feConstrainedBox",
+    "body": [
+      "ConstrainedBox(",
+      "  constraints: BoxConstraints(",
+      "    minWidth: ${1:::100.0},",
+      "    maxWidth: ${2:::200.0},",
+      "    minHeight: ${3:::100.0},",
+      "    maxHeight: ${4:::200.0},",
+      "  ),",
+      "  child: ${5:::Container(",
+      "    color: Colors.${6:blue},",
+      "  )},",
+      ")"
+    ],
+    "description": "Create a ConstrainedBox to impose size constraints on its child."
+  },
+  "FlutterEssence FittedBox": {
+    "prefix": "feFittedBox",
+    "body": [
+      "FittedBox(",
+      "  fit: BoxFit.${1:::contain},",
+      "  child: ${2:::Text('Fitted Text')},",
+      ")"
+    ],
+    "description": "Create a FittedBox to scale and position its child within itself."
+  },
+  "FlutterEssence Baseline": {
+    "prefix": "feBaseline",
+    "body": [
+      "Baseline(",
+      "  baseline: ${1:::20.0},",
+      "  baselineType: TextBaseline.${2:::alphabetic},",
+      "  child: ${3:::Text('Baseline Text')},",
+      ")"
+    ],
+    "description": "Align a child widget's baseline with its parent's baseline."
+  },
+  "FlutterEssence Spacer": {
+    "prefix": "feSpacer",
+    "body": ["Spacer(", "  flex: ${1:::1},", ")"],
+    "description": "Use Spacer to create an adjustable empty space within a Row or Column."
+  },
+  "FlutterEssence Table": {
+    "prefix": "feTable",
+    "body": [
+      "Table(",
+      "  border: TableBorder.all(color: Colors.${1:::black}, width: ${2:::1.0}),",
+      "  children: [",
+      "    TableRow(",
+      "      children: [",
+      "        ${3:::Text('Row 1, Col 1')},",
+      "        ${4:::Text('Row 1, Col 2')},",
+      "        ${5:::Text('Row 1, Col 3')},",
+      "      ],",
+      "    ),",
+      "    TableRow(",
+      "      children: [",
+      "        ${6:::Text('Row 2, Col 1')},",
+      "        ${7:::Text('Row 2, Col 2')},",
+      "        ${8:::Text('Row 2, Col 3')},",
+      "      ],",
+      "    ),",
+      "  ],",
+      ")"
+    ],
+    "description": "Create a Table widget with rows and columns."
+  },
+  "FlutterEssence Positioned": {
+    "prefix": "fePositioned",
+    "body": [
+      "Positioned(",
+      "  top: ${1:::10.0},",
+      "  left: ${2:::10.0},",
+      "  child: ${3:::Container(",
+      "    width: ${4:50.0},",
+      "    height: ${5:::50.0},",
+      "    color: Colors.${6:::blue},",
+      "  )},",
+      ")"
+    ],
+    "description": "Create a Positioned widget to position a child within a Stack."
+  },
+  "FlutterEssence Wrap": {
+    "prefix": "feWrap",
+    "body": [
+      "Wrap(",
+      "  spacing: ${1:::8.0},",
+      "  runSpacing: ${2:::4.0},",
+      "  children: <Widget>[",
+      "    ${3:::Chip(label: Text('Chip 1'))},",
+      "    ${4:::Chip(label: Text('Chip 2'))},",
+      "    ${5:::Chip(label: Text('Chip 3'))},",
+      "  ],",
+      ")"
+    ],
+    "description": "Create a Wrap widget with spacing between children."
+  },
+  "FlutterEssence IndexedStack": {
+    "prefix": "feIndexedStack",
+    "body": [
+      "IndexedStack(",
+      "  index: ${1:::0},",
+      "  children: <Widget>[",
+      "    ${2:::Container(color: Colors.${3:red})},",
+      "    ${4:::Container(color: Colors.${5:green})},",
+      "    ${6:::Container(color: Colors.${7:blue})},",
+      "  ],",
+      ")"
+    ],
+    "description": "Create an IndexedStack widget to display only one child from a list of children."
+  },
+  "FlutterEssence IntrinsicHeight": {
+    "prefix": "feIntrinsicHeight",
+    "body": [
+      "IntrinsicHeight(",
+      "  child: ${1:::Row(",
+      "    children: <Widget>[",
+      "      ${2:Text('Short Text')},",
+      "      ${3:::VerticalDivider(width: 2.0)},",
+      "      ${4:::Text('Longer Text Here')},",
+      "    ],",
+      "  )},",
+      ")"
+    ],
+    "description": "Create an IntrinsicHeight widget to make children take the height of the tallest child."
+  },
+  "FlutterEssence IntrinsicWidth": {
+    "prefix": "feIntrinsicWidth",
+    "body": [
+      "IntrinsicWidth(",
+      "  child: ${1:::Column(",
+      "    children: <Widget>[",
+      "      ${2:Text('Short')},",
+      "      ${3:::Text('Longer Text')},",
+      "    ],",
+      "  )},",
+      ")"
+    ],
+    "description": "Create an IntrinsicWidth widget to make children take the width of the widest child."
+  },
+  "FlutterEssence OverflowBox": {
+    "prefix": "feOverflowBox",
+    "body": [
+      "OverflowBox(",
+      "  maxWidth: ${1:::200.0},",
+      "  maxHeight: ${2:::200.0},",
+      "  child: ${3:::Container(",
+      "    width: ${4:300.0},",
+      "    height: ${5:::300.0},",
+      "    color: Colors.${6:::red},",
+      "  )},",
+      ")"
+    ],
+    "description": "Create an OverflowBox widget to impose constraints on its child that can exceed the parent's constraints."
+  },
+  "FlutterEssence TextField": {
+    "prefix": "feTextField",
+    "body": [
+      "TextField(",
+      "  controller: ${1:::myController},",
+      "  decoration: InputDecoration(",
+      "    border: OutlineInputBorder(),",
+      "    labelText: '${2:::Enter Text}',",
+      "  ),",
+      "  onChanged: (text) {",
+      "    ${3:::// Handle text input change}",
+      "  },",
+      ")"
+    ],
+    "description": "Create a Flutter TextField with basic properties."
+  },
+  "FlutterEssence Checkbox": {
+    "prefix": "feCheckbox",
+    "body": [
+      "Checkbox(",
+      "  value: ${1:::true},",
+      "  onChanged: (bool? newValue) {",
+      "    ${2:::// Handle checkbox state change}",
+      "  },",
+      "  activeColor: Colors.${3:::blue},",
+      ")"
+    ],
+    "description": "Create a Flutter Checkbox widget."
+  },
+  "FlutterEssence Radio": {
+    "prefix": "feRadio",
+    "body": [
+      "Radio<${1:::int}>(",
+      "  value: ${2:::1},",
+      "  groupValue: ${3:::selectedValue},",
+      "  onChanged: (${1:::int}? value) {",
+      "    ${4:::setState(() {",
+      "      selectedValue = value;",
+      "    })}",
+      "  },",
+      ")"
+    ],
+    "description": "Create a Flutter Radio button."
+  },
+  "FlutterEssence Switch": {
+    "prefix": "feSwitch",
+    "body": [
+      "Switch(",
+      "  value: ${1:::true},",
+      "  onChanged: (bool value) {",
+      "    ${2:::// Handle switch state change}",
+      "  },",
+      "  activeColor: Colors.${3:::blue},",
+      ")"
+    ],
+    "description": "Create a Flutter Switch widget."
+  },
+  "FlutterEssence Slider": {
+    "prefix": "feSlider",
+    "body": [
+      "Slider(",
+      "  value: ${1:::0.5},",
+      "  min: ${2:::0.0},",
+      "  max: ${3:::1.0},",
+      "  divisions: ${4:::10},",
+      "  label: '${5:::Value}',",
+      "  onChanged: (double value) {",
+      "    ${6:::setState(() {",
+      "      ${7:sliderValue} = value;",
+      "    })}",
+      "  },",
+      ")"
+    ],
+    "description": "Create a Flutter Slider with divisions and labels."
+  },
+  "FlutterEssence DropdownButton": {
+    "prefix": "feDropdownButton",
+    "body": [
+      "DropdownButton<String>(",
+      "  value: ${1:::selectedValue},",
+      "  onChanged: (String? newValue) {",
+      "    ${2:::setState(() {",
+      "      ${3:selectedValue} = newValue!;",
+      "    })}",
+      "  },",
+      "  items: <String>['${4:::One}', '${5:::Two}', '${6:::Three}', '${7:::Four}']",
+      "      .map<DropdownMenuItem<String>>((String value) {",
+      "    return DropdownMenuItem<String>(",
+      "      value: value,",
+      "      child: Text(value),",
+      "    );",
+      "  }).toList(),",
+      ")"
+    ],
+    "description": "Create a Flutter DropdownButton with selectable items."
+  },
+  "FlutterEssence Form": {
+    "prefix": "feForm",
+    "body": [
+      "Form(",
+      "  key: ${1:::_formKey},",
+      "  child: Column(",
+      "    children: <Widget>[",
+      "      TextFormField(",
+      "        decoration: InputDecoration(",
+      "          labelText: '${2:::Enter your name}',",
+      "        ),",
+      "        validator: (value) {",
+      "          if (value == null || value.isEmpty) {",
+      "            return '${3:::Please enter some text}';",
+      "          }",
+      "          return null;",
+      "        },",
+      "      ),",
+      "      ElevatedButton(",
+      "        onPressed: () {",
+      "          if (${4:::_formKey.currentState}!.validate()) {",
+      "            ${5:::// Process data}",
+      "          }",
+      "        },",
+      "        child: Text('${6:::Submit}'),",
+      "      ),",
+      "    ],",
+      "  ),",
+      ")"
+    ],
+    "description": "Create a Flutter Form with a validator."
+  },
+
+  "FlutterEssence DatePicker": {
+    "prefix": "feDatePicker",
+    "body": [
+      "Future<void> _selectDate(BuildContext context) async {",
+      "  final DateTime? picked = await showDatePicker(",
+      "    context: context,",
+      "    initialDate: ${1:::DateTime.now()},",
+      "    firstDate: ${2:::DateTime(2000)},",
+      "    lastDate: ${3:::DateTime(2101)},",
+      "  );",
+      "  if (picked != null && picked != selectedDate) {",
+      "    setState(() {",
+      "      selectedDate = picked;",
+      "    });",
+      "  }",
+      "}"
+    ],
+    "description": "Create a DatePicker to select a date."
+  },
+  "FlutterEssence TimePicker": {
+    "prefix": "feTimePicker",
+    "body": [
+      "Future<void> _selectTime(BuildContext context) async {",
+      "  final TimeOfDay? picked = await showTimePicker(",
+      "    context: context,",
+      "    initialTime: ${1:::TimeOfDay.now()},",
+      "  );",
+      "  if (picked != null && picked != selectedTime) {",
+      "    setState(() {",
+      "      selectedTime = picked;",
+      "    });",
+      "  }",
+      "}"
+    ],
+    "description": "Create a TimePicker to select a time."
+  },
+  "FlutterEssence Stepper": {
+    "prefix": "feStepper",
+    "body": [
+      "Stepper(",
+      "  steps: <Step>[",
+      "    Step(",
+      "      title: Text('${1:::Step 1}'),",
+      "      content: Text('${2:::Content for Step 1}'),",
+      "      isActive: ${3:::_currentStep == 0},",
+      "    ),",
+      "    Step(",
+      "      title: Text('${4:::Step 2}'),",
+      "      content: Text('${5:::Content for Step 2}'),",
+      "      isActive: ${6:::_currentStep == 1},",
+      "    ),",
+      "    Step(",
+      "      title: Text('${7:::Step 3}'),",
+      "      content: Text('${8:::Content for Step 3}'),",
+      "      isActive: ${9:::_currentStep == 2},",
+      "    ),",
+      "  ],",
+      "  currentStep: ${10:::_currentStep},",
+      "  onStepContinue: ${11:::() {",
+      "    if (_currentStep < 2) {",
+      "      setState(() { _currentStep += 1; });",
+      "    }",
+      "  }},",
+      "  onStepCancel: ${12:::() {",
+      "    if (_currentStep > 0) {",
+      "      setState(() { _currentStep -= 1; });",
+      "    }",
+      "  }},",
+      ")"
+    ],
+    "description": "Create a Stepper with multiple steps and navigation."
+  },
+  "FlutterEssence TextFormField with Validator": {
+    "prefix": "feTextFormFieldValidator",
+    "body": [
+      "TextFormField(",
+      "  controller: ${1:::myController},",
+      "  decoration: InputDecoration(",
+      "    labelText: '${2:::Enter your text}',",
+      "  ),",
+      "  validator: (value) {",
+      "    if (value == null || value.isEmpty) {",
+      "      return '${3:::Please enter some text}';",
+      "    }",
+      "    return null;",
+      "  },",
+      ")"
+    ],
+    "description": "Create a TextFormField with a validator."
+  },
+  "FlutterEssence Custom Button": {
+    "prefix": "feCustomButton",
+    "body": [
+      "class ${1:::CustomButton} extends StatelessWidget {",
+      "  final String label;",
+      "  final VoidCallback onPressed;",
+      "",
+      "  const ${1:::CustomButton}({",
+      "    Key? key,",
+      "    required this.label,",
+      "    required this.onPressed,",
+      "  }) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ElevatedButton(",
+      "      onPressed: onPressed,",
+      "      child: Text(label),",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom button widget."
+  },
+  "FlutterEssence Custom Card": {
+    "prefix": "feCustomCard",
+    "body": [
+      "class ${1:::CustomCard} extends StatelessWidget {",
+      "  final Widget child;",
+      "  const ${1:::CustomCard}({Key? key, required this.child}) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Card(",
+      "      shape: RoundedRectangleBorder(",
+      "        borderRadius: BorderRadius.circular(${2:::8.0}),",
+      "      ),",
+      "      child: Padding(",
+      "        padding: const EdgeInsets.all(${3:::16.0}),",
+      "        child: child,",
+      "      ),",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom card widget."
+  },
+  "FlutterEssence Custom Dialog": {
+    "prefix": "feCustomDialog",
+    "body": [
+      "class ${1:::CustomDialog} extends StatelessWidget {",
+      "  final String title;",
+      "  final String content;",
+      "  final VoidCallback onConfirm;",
+      "",
+      "  const ${1:::CustomDialog}({",
+      "    Key? key,",
+      "    required this.title,",
+      "    required this.content,",
+      "    required this.onConfirm,",
+      "  }) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return AlertDialog(",
+      "      title: Text(title),",
+      "      content: Text(content),",
+      "      actions: [",
+      "        TextButton(",
+      "          onPressed: () => Navigator.of(context).pop(),",
+      "          child: Text('Cancel'),",
+      "        ),",
+      "        ElevatedButton(",
+      "          onPressed: onConfirm,",
+      "          child: Text('Confirm'),",
+      "        ),",
+      "      ],",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom dialog widget."
+  },
+  "FlutterEssence Custom Alert": {
+    "prefix": "feCustomAlert",
+    "body": [
+      "class ${1:::CustomAlert} extends StatelessWidget {",
+      "  final String message;",
+      "  const ${1:::CustomAlert}({Key? key, required this.message}) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return AlertDialog(",
+      "      content: Text(message),",
+      "      actions: [",
+      "        TextButton(",
+      "          onPressed: () => Navigator.of(context).pop(),",
+      "          child: Text('OK'),",
+      "        ),",
+      "      ],",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom alert widget."
+  },
+  "FlutterEssence Custom Drawer": {
+    "prefix": "feCustomDrawer",
+    "body": [
+      "class ${1:::CustomDrawer} extends StatelessWidget {",
+      "  const ${1:::CustomDrawer}({Key? key}) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Drawer(",
+      "      child: ListView(",
+      "        padding: EdgeInsets.zero,",
+      "        children: <Widget>[",
+      "          DrawerHeader(",
+      "            decoration: BoxDecoration(",
+      "              color: Colors.${2:::blue},",
+      "            ),",
+      "            child: Text(",
+      "              '${3:::Header}',",
+      "              style: TextStyle(",
+      "                color: Colors.${4:::white},",
+      "                fontSize: ${5:::24},",
+      "              ),",
+      "            ),",
+      "          ),",
+      "          ListTile(",
+      "            leading: Icon(Icons.${6:::home}),",
+      "            title: Text('${7:::Home}'),",
+      "            onTap: () {",
+      "              Navigator.pop(context);",
+      "            },",
+      "          ),",
+      "          ListTile(",
+      "            leading: Icon(Icons.${8:::settings}),",
+      "            title: Text('${9:::Settings}'),",
+      "            onTap: () {",
+      "              Navigator.pop(context);",
+      "            },",
+      "          ),",
+      "        ],",
+      "      ),",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom drawer widget."
+  },
+  "FlutterEssence Custom BottomSheet": {
+    "prefix": "feCustomBottomSheet",
+    "body": [
+      "class ${1:::CustomBottomSheet} extends StatelessWidget {",
+      "  const ${1:::CustomBottomSheet}({Key? key}) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Container(",
+      "      height: ${2:::200.0},",
+      "      color: Colors.${3:::white},",
+      "      child: Center(",
+      "        child: Column(",
+      "          mainAxisSize: MainAxisSize.min,",
+      "          children: <Widget>[",
+      "            Text('${4:::Bottom Sheet}'),",
+      "            ElevatedButton(",
+      "              onPressed: () => Navigator.pop(context),",
+      "              child: Text('${5:::Close Bottom Sheet}'),",
+      "            )",
+      "          ],",
+      "        ),",
+      "      ),",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom bottom sheet widget."
+  },
+  "FlutterEssence Custom AppBar": {
+    "prefix": "feCustomAppBar",
+    "body": [
+      "class ${1:::CustomAppBar} extends StatelessWidget implements PreferredSizeWidget {",
+      "  final String title;",
+      "  const ${1:::CustomAppBar}({Key? key, required this.title}) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return AppBar(",
+      "      title: Text(title),",
+      "      backgroundColor: Colors.${2:::blue},",
+      "      actions: [",
+      "        IconButton(",
+      "          icon: Icon(Icons.${3:::search}),",
+      "          onPressed: () {",
+      "            ${4:::// Handle search press}",
+      "          },",
+      "        ),",
+      "      ],",
+      "    );",
+      "  }",
+      "",
+      "  @override",
+      "  Size get preferredSize => Size.fromHeight(${5:::kToolbarHeight});",
+      "}"
+    ],
+    "description": "Create a custom app bar widget."
+  },
+  "FlutterEssence Custom Form": {
+    "prefix": "feCustomForm",
+    "body": [
+      "class ${1:::CustomForm} extends StatelessWidget {",
+      "  final GlobalKey<FormState> formKey;",
+      "  const ${1:::CustomForm}({Key? key, required this.formKey}) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Form(",
+      "      key: formKey,",
+      "      child: Column(",
+      "        children: <Widget>[",
+      "          TextFormField(",
+      "            decoration: InputDecoration(",
+      "              labelText: '${2:::Enter your name}',",
+      "            ),",
+      "            validator: (value) {",
+      "              if (value == null || value.isEmpty) {",
+      "                return '${3:::Please enter your name}';",
+      "              }",
+      "              return null;",
+      "            },",
+      "          ),",
+      "          ElevatedButton(",
+      "            onPressed: () {",
+      "              if (formKey.currentState!.validate()) {",
+      "                ${4:::// Process data}",
+      "              }",
+      "            },",
+      "            child: Text('${5:::Submit}'),",
+      "          ),",
+      "        ],",
+      "      ),",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom form widget."
+  },
+  "FlutterEssence Custom Icon": {
+    "prefix": "feCustomIcon",
+    "body": [
+      "class ${1:::CustomIcon} extends StatelessWidget {",
+      "  final IconData icon;",
+      "  final double size;",
+      "  final Color color;",
+      "",
+      "  const ${1:::CustomIcon}({",
+      "    Key? key,",
+      "    required this.icon,",
+      "    this.size = ${2:::24.0},",
+      "    this.color = Colors.${3:::black},",
+      "  }) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Icon(",
+      "      icon,",
+      "      size: size,",
+      "      color: color,",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom icon widget."
+  },
+  "FlutterEssence Custom TextField": {
+    "prefix": "feCustomTextField",
+    "body": [
+      "class ${1:::CustomTextField} extends StatelessWidget {",
+      "  final TextEditingController controller;",
+      "  final String labelText;",
+      "  final TextInputType keyboardType;",
+      "",
+      "  const ${1:::CustomTextField}({",
+      "    Key? key,",
+      "    required this.controller,",
+      "    required this.labelText,",
+      "    this.keyboardType = TextInputType.${2:::text},",
+      "  }) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return TextField(",
+      "      controller: controller,",
+      "      decoration: InputDecoration(",
+      "        labelText: labelText,",
+      "      ),",
+      "      keyboardType: keyboardType,",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom text field widget."
+  },
+  "FlutterEssence Custom ListItem": {
+    "prefix": "feCustomListItem",
+    "body": [
+      "class ${1:::CustomListItem} extends StatelessWidget {",
+      "  final String title;",
+      "  final String subtitle;",
+      "  final IconData leadingIcon;",
+      "  final IconData trailingIcon;",
+      "",
+      "  const ${1:::CustomListItem}({",
+      "    Key? key,",
+      "    required this.title,",
+      "    required this.subtitle,",
+      "    this.leadingIcon = Icons.${2:::account_circle},",
+      "    this.trailingIcon = Icons.${3:::arrow_forward},",
+      "  }) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ListTile(",
+      "      leading: Icon(leadingIcon),",
+      "      title: Text(title),",
+      "      subtitle: Text(subtitle),",
+      "      trailing: Icon(trailingIcon),",
+      "      onTap: () {",
+      "        ${4:::// Handle tap}",
+      "      },",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom list item widget."
+  },
+  "FlutterEssence Custom Slider": {
+    "prefix": "feCustomSlider",
+    "body": [
+      "class ${1:::CustomSlider} extends StatelessWidget {",
+      "  final double value;",
+      "  final double min;",
+      "  final double max;",
+      "  final int divisions;",
+      "  final ValueChanged<double> onChanged;",
+      "",
+      "  const ${1:::CustomSlider}({",
+      "    Key? key,",
+      "    required this.value,",
+      "    required this.min,",
+      "    required this.max,",
+      "    this.divisions = ${2:::10},",
+      "    required this.onChanged,",
+      "  }) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Slider(",
+      "      value: value,",
+      "      min: min,",
+      "      max: max,",
+      "      divisions: divisions,",
+      "      label: value.round().toString(),",
+      "      onChanged: onChanged,",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom slider widget."
+  },
+  "FlutterEssence Custom Switch": {
+    "prefix": "feCustomSwitch",
+    "body": [
+      "class ${1:::CustomSwitch} extends StatelessWidget {",
+      "  final bool value;",
+      "  final ValueChanged<bool> onChanged;",
+      "",
+      "  const ${1:::CustomSwitch}({",
+      "    Key? key,",
+      "    required this.value,",
+      "    required this.onChanged,",
+      "  }) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Switch(",
+      "      value: value,",
+      "      onChanged: onChanged,",
+      "      activeColor: Colors.${2:::blue},",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a custom switch widget."
+  }
+}
